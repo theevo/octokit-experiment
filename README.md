@@ -35,6 +35,9 @@ user.rels[:organizations].get.data[0][:rels][:repos].head.data[0].full_name
 
 # Resources
 
+Octokit Readme
+https://github.com/octokit/octokit.rb/blob/master/README.md
+
 Sawyer Class
 http://rubydoc.info/gems/sawyer/0.5.1/frames
 
