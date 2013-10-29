@@ -23,4 +23,19 @@ See all repos?
 $ user.rels[:organizations].get.data.first[:rels][:repos].head.data
 ```
 
+get the name of the first repo
+```shell
+user.rels[:organizations].get.data[0][:rels][:repos].head.data[0].name
+```
+
+path to first repo
+```shell
+user.rels[:organizations].get.data[0][:rels][:repos].head.data[0].full_name
+```
+
+# Resources
+
+Sawyer Class
+http://rubydoc.info/gems/sawyer/0.5.1/frames
+
 _this experiment was jump started with [aspen](http://rubygems.org/gems/aspen)_
