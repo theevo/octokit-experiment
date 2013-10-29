@@ -5,4 +5,8 @@ client = Octokit::Client.new \
   :password => MY_PASSWORD
 
 user = client.user
-binding.pry
+
+puts "FLATIRON REPO NAMES"
+user.rels[:organizations].get.data[0][:rels][:repos].head.data.each do |repo|
+  puts "#{repo.name} | #{repo.full_name}"
+end
