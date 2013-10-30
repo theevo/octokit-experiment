@@ -1,0 +1,11 @@
+<html>
+<head>
+  <title>Flatiron Repos</title>
+</head>
+<body>
+<h1>Project Camelback</h1>
+<% @user.rels[:organizations].get.data[0][:rels][:repos].head.data.each do |repo| %>
+      <%= "<a href='http://github.com/#{repo.full_name}'>#{repo.name}</a><br>" %>
+<% end %>
+</body>
+</html>
