@@ -4,9 +4,10 @@ client = Octokit::Client.new \
   :login => MY_LOGIN,
   :password => MY_PASSWORD
 
-user = client.user
+binding.pry
 
-puts "FLATIRON REPO NAMES"
-user.rels[:organizations].get.data[0][:rels][:repos].head.data.each do |repo|
-  puts "#{repo.name} | #{repo.full_name}"
-end
+# useful pry commands: 
+# 1. cd client
+# 2. ls
+# 3. show-source organization 
+# 4. show-source (any method you see in ls)
